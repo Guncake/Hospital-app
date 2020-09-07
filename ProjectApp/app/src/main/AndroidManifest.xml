@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="pl.kgorak.hospitalapp">
 
-    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
 
     <uses-permission
         android:name="android.permission.USE_BIOMETRIC"
@@ -30,10 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-            android:screenOrientation="fullSensor"
-            tools:replace="screenOrientation" />
+
     </application>
 
 </manifest>
