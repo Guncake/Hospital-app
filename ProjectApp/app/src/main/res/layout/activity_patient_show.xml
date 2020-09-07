@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patient_pesel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/patient_name"
+        app:layout_constraintStart_toStartOf="@+id/patient_name"
+
+        app:layout_constraintTop_toBottomOf="@+id/patient_name" />
+
+    <TextView
+        android:id="@+id/patient_disease_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_pesel"
+        app:layout_goneMarginStart="30dp" />
+
+    <TextView
+        android:id="@+id/patient_disease_icd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textSize="15sp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/patient_disease_type"
+        app:layout_constraintTop_toBottomOf="@+id/patient_disease_type" />
+
+    <TextView
+        android:id="@+id/patient_disease_description"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:gravity="start"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/patient_disease_type" />
+
+    <TextView
+        android:id="@+id/patient_medication_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textSize="15sp"
+        android:text="TextView"
+
+        app:layout_constraintStart_toStartOf="@+id/patient_disease_icd"
+        app:layout_constraintTop_toBottomOf="@+id/patient_disease_icd" />
+
+    <TextView
+        android:id="@+id/patient_medication_dose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/patient_disease_description"
+        app:layout_constraintStart_toStartOf="@+id/patient_disease_description"
+        app:layout_constraintTop_toTopOf="@id/patient_medication_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

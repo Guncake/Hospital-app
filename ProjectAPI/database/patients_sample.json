@@ -1,0 +1,30 @@
+{
+  "patients": [
+    {
+      "id": 0,
+      "name": "SAMPLE",
+      "PESEL": "SAMPLE",
+      "date": "SAMPLE",
+      "disease":[
+        {
+        "type_n": 0,
+        "type": "SAMPLE",
+        "ICD-10": "SAMPLE",
+        "description": "SAMPLE",
+        "additionalInfo": "SAMPLE"
+        }
+      ],
+      "location":{
+        "floor": 0,
+        "room": 0,
+        "bed": 0
+      },
+      "medication":[
+        {
+        "name": "SAMPLE",
+        "dose": "SAMPLE"
+        }
+      ]
+    }
+  ]
+}

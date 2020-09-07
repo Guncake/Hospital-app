@@ -1,0 +1,13 @@
+{
+  "accounts": [
+    {
+      "id": "SAMPLE",
+      "permission": 1,
+      "login": "SAMPLE",
+      "password": "SAMPLE",
+      "active": true,
+      "name": "SAMPLE",
+      "surname": "SAMPLE"
+    }
+  ]
+}
