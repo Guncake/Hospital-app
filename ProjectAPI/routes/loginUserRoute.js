@@ -8,7 +8,7 @@ const moment = require('moment');
 router.post('/login', (request, response) => {
   var accounts = request.accounts;
   var userToLook = request.body.login;
-  console.log(moment().format("YYYY MM DD hh:mm:ss - ") + userToLook + "is trying to log in");
+  console.log(moment().format("YYYY MM DD hh:mm:ss - ") + userToLook + " is trying to log in");
 
   for(i = 0; i<accounts.accounts.length; i++){
     if(accounts.accounts[i].login == userToLook){

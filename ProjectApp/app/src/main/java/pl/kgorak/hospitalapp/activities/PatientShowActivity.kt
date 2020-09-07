@@ -19,7 +19,7 @@ class PatientShowActivity : AppCompatActivity() {
 
         patient_disease_type.text = patient.disease[0].type
         patient_disease_icd.text = patient.disease[0].icd10
-        
+
         patient_disease_description.text = patient.disease[0].description
         patient_medication_name.text = patient.medication[0].name
         patient_medication_dose.text = patient.medication[0].dose

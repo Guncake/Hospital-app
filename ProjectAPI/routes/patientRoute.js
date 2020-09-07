@@ -21,7 +21,7 @@ router.post('/getpatient', verify.verifyUser, (request, response, next) => {
     var error = false;
     var message = "patient data downloaded";
     var patientData = patient;
-    console.log(moment().format("YYYY MM DD hh:mm:ss - ") + patientToLook + " data has been requested by: " + request.user.login);
+    console.log(moment().format("YYYY MM DD hh:mm:ss - ") + patientToLook + " data has been send to user: " + request.user.login);
   }else {
     var error = true;
     var message = "patient not found";
